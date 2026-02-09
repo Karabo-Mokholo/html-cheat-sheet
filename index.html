@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Karabo Mokholo">
+    <meta name="description" content="This is a page that summarises HTML and its elements">
+    <meta content="This page explains all the html elements you need to know to start your web development journey, there are also some useful links as you go on" property="og:description">
+    <meta content="Karabo's HTML Cheat Sheet" property="og:title">
+    <title>HTML Cheat Sheet</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="fav-icon.jpg" type="x-image">
+</head>
+<body>
+    <header id="header" class="header-item">
+        <p>
+            HTML CHEAT SHEET
+        </p>
+    </header>
+    <main>
+        <div class="introduction">
+            <h1>HTML Summary</h1>
+            <p>In this page you will get all the necessary tools to begin your web development journey, starting off with <abbr title="Hyper Text Mark-up Language">HTML</abbr>. It is the building block of all modern web pages. Think of it as the structure of a house, or a skeleton of a human.</p>
+            <h2>Who is HTML for?</h2>
+            <p>HTML is for anyone who just wants to know the basics of websites. It includes : </p>
+            <ul>
+                <li>Front-End Developers</li>
+                <li>Software Engineers</li>
+                <li>Freelancers</li>
+                <li>And many more...</li>
+            </ul>
+            <p>Mastering HTML will help you not only with the basics, but it will be very useful should you wish to further your studies into stacks like <b>MERN</b>, or <b>PERN</b></p>
+            <p>This page will give you all the basics of HTML and some useful tips as well.</p>
+        </div>
+        <div class="main-container">
+            <h2>HTML Elements</h2>
+            <p>An element in html has the following structure :</p>
+            <p>
+                <code>&lt;p&gt;Hello World&lt;/p&gt;</code> <br>
+                each syntax in this line has a meaning :
+            </p>
+            <ul>
+                <li>&lt;p&gt; - Opening Tag</li>
+                <li>Hello World - Content </li>
+                <li>&lt;/p&gt; - Closing Tag</li>
+            </ul>
+            <p><b>NB</b>: Some elements are "Self-closing" meaning they do not have / do not require a closing tag. You can find a better detailed explanation <a href="https://developer.mozilla.org/en-US/docs/Glossary/Void_element">here</a>.</p>
+            <p>Exaples of these are : &lt;img&gt;, &lt;input&gt; and so on.</p>
+        </div>
+        <div class="html-table">
+            <h2>Basic HTML elements you need to know</h2>
+            <table>
+                
+                <caption>html elements</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Element</th>
+                        <th scope="col">Description</th>
+                        <th scope="col" >Use Example</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>&lt;h1&gt;</td>
+                        <td>This is a heading tag.It tells the main concept of a topic. It is advisable to only have one h1 tag per page</td>
+                        <td>&lt;h1&gt;LinkedIn&lt;/h1&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;h2&gt;</td>
+                        <td>The second larget heading tag</td>
+                        <td>&lt;h2&gt;Google&lt;/h2&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;h3&gt;</td>
+                        <td>The third larget heading tag</td>
+                        <td>&lt;h3&gt;Google&lt;h3&gt;</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">Headings move in <b>hierachy</b>, with h1 being the biggest, and h6 being the smallest. You are however, <em>allowed</em> to have more than one h2 - h6 headingds per page. The only this is not to <b>jump</b> over. For exammple going from h2 to h5</td>
+
+                    </tr>
+                    <tr>
+                        <td>&lt;p&gt;</td>
+                        <td>This is a paragraph tag</td>
+                        <td>&lt;p&gt;Details about a product&lt;/p&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;img&gt;</td>
+                        <td>Used to display images to your page</td>
+                        <td>&lt;img <span>src</span> ="image.png"&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;video&gt;</td>
+                        <td>Used to display videos to your page</td>
+                        <td>&lt;video&gt; &lt;source="vid.mp4" <span>type</span>="vid/mp4"&gt; 
+                            &lt;/video&gt;
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&lt;ul&gt;</td>
+                        <td>Unordered List</td>
+                        <td>&lt;ul&gt; <br>&lt;li&gt;html &lt;/li&gt; <br> &lt;li&gt;css &lt;/li&gt; <br> &lt;li&gt;javascript&lt;/li&gt; <br>  &lt;/ul&gt; </td>
+                    </tr>
+                    <tr>
+                        <td>&lt;li&gt;</td>
+                        <td>List item</td>
+                        <td>Chech example for ul and li</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;div&gt;</td>
+                        <td>Divider - used to group specific elements for styling purposes</td>
+                        <td>&lt;div&gt; <br>
+                            &lt;h2&gt;Article Heading &lt;/h2&gt;
+                        &lt;p&gt;I want this paragraph tohave the same styling as the heading &lt;/p&gt; <br>
+                        &lt;/div&gt;
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&lt;span&gt;</td>
+                        <td>Used to style or target only a specific word or element</td>
+                        <td>&lt;p&gt;This sentence ends with a &lt;span&gt;<span>blue color</span>&lt;/span&gt; &lt;/p&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;iframe&gt;</td>
+                        <td>Used to display media outside of your file directory.</td>
+                        <td>&lt;iframe <span>src</span>="url" <span>title</span>="youtube-video"&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;blockquote&gt;</td>
+                        <td>Used for quoted tex</td>
+                        <td> Like J.Cole said, &lt;blockquote&gt;There is always going to be a house bigger than yours, always going to be a car bigger than yours, but you will never be happy until you love yours!&lt;/blockquote&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;form&gt;</td>
+                        <td>Used to create a form for your website</td>
+                        <td>&lt;form <span>action</span>="url" <span>method</span>="get"&gt; <br>
+                        &lt;/form&gt;
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&lt;input&gt;</td>
+                        <td>This is where the webstie goes from static to interactive. Input is used to get information from the user , from emails, to basic information to feedback.</td>
+                        <td>&lt;input <span>type</span>="text" <span>placeholder</span>="Your Name"&gt;</td>
+                    </tr>
+                    <td>&lt;table&gt;</td>
+                    <td>Used to create a table to display data or a graph</td>
+                    <td>&lt;table&gt; <br>
+                    &lt;tr&gt; <br>
+                    &lt;td&gt; Angel <br>
+                    &lt;td&gt; Kevin <br>
+                    &lt;td&gt; Matt <br>
+                    &lt;/tr&gt;<br>
+                    &lt;/table&gt;
+                    </td>
+                </tbody>
+            </table>
+        </div>
+        <div class="more-section">
+            <h2>There are plenty of more html elements out there that you can view here:</h2>
+            <ol>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements">MDN</a></li>
+                <li><a href="https://www.w3schools.com/htmL/html_elements.asp">w3schools</a></li>
+                <li><a href="https://www.freecodecamp.org/news/html-cheat-sheet-html-elements-list-reference/">freeCodeCamp</a></li>
+            </ol>
+
+        </div>
+    </main>
+
+    <center>&copy;Karabo Mokholo. 2026</center>
+    <script src="script.js"></script>
+</body>
+</html>
